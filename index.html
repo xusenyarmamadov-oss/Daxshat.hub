@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daxshat Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        DAXSHAT <span>HUB</span>
+    </div>
+
+    <nav>
+        <a href="#home">Bosh sahifa</a>
+        <a href="#movies">Kinolar</a>
+        <a href="#about">Biz haqimizda</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+</header>
+
+
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Bosh sahifa</a>
+    <a href="#movies">Kinolar</a>
+    <a href="#about">Biz haqimizda</a>
+</div>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="small-title">DAXSHAT HUB</p>
+
+        <h1>
+            KINOLAR
+            <span>OLAMI</span>
+        </h1>
+
+        <p class="hero-text">
+            Eng qiziqarli filmlar va seriallar olamiga xush kelibsiz.
+            Sevimli kinolaringizni bir joyda tomosha qiling.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#movies" class="main-btn">
+                ▶ Kinolarni ko‘rish
+            </a>
+
+            <a href="#about" class="second-btn">
+                Batafsil
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="cinema-scene">
+
+        <div class="neon-circle"></div>
+
+        <div class="film-reel reel-left">
+            <div class="reel-hole"></div>
+            <div class="reel-hole"></div>
+            <div class="reel-hole"></div>
+            <div class="reel-hole"></div>
+            <div class="reel-center"></div>
+        </div>
+
+        <div class="film-reel reel-right">
+            <div class="reel-hole"></div>
+            <div class="reel-hole"></div>
+            <div class="reel-hole"></div>
+            <div class="reel-hole"></div>
+            <div class="reel-center"></div>
+        </div>
+
+        <div class="camera">
+
+            <div class="camera-top"></div>
+
+            <div class="camera-body">
+
+                <div class="camera-lens">
+                    <div></div>
+                </div>
+
+                <div class="camera-light"></div>
+
+            </div>
+
+            <div class="camera-stand"></div>
+
+        </div>
+
+        <div class="clapper">
+
+            <div class="clapper-top">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="clapper-body">
+                DAXSHAT HUB
+            </div>
+
+        </div>
+
+        <div class="popcorn">
+            <span>POP</span>
+            <span>CORN</span>
+        </div>
+
+        <div class="particle p1"></div>
+        <div class="particle p2"></div>
+        <div class="particle p3"></div>
+        <div class="particle p4"></div>
+        <div class="particle p5"></div>
+
+    </div>
+
+</section>
+
+
+<!-- SEARCH -->
+
+<section class="search-section">
+
+    <div class="section-title">
+        <p>FILMLAR</p>
+        <h2>Kinoni qidiring</h2>
+    </div>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Kino yoki qism nomini yozing..."
+        >
+
+        <button id="searchBtn">
+            🔍
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- MOVIES -->
+
+<section class="movies" id="movies">
+
+    <div class="movie-header">
+
+        <div>
+            <p class="section-label">PREMIERA</p>
+            <h2>Ovchi itlar</h2>
+        </div>
+
+        <div class="movie-info">
+            <span>🎬 7 qism</span>
+            <span>⭐ HD</span>
+        </div>
+
+    </div>
+
+
+    <div class="episodes" id="episodes">
+
+
+        <!-- 1-QISM -->
+
+        <article class="episode-card" data-title="Ovchi itlar 1 qism">
+
+            <div class="poster">
+
+                <img
+                    src="ovchi-itlar.jpg"
+                    alt="Ovchi itlar 1-qism"
+                >
+
+                <span class="episode-number">01</span>
+
+                <div class="play-icon">▶</div>
+
+            </div>
+
+            <div class="episode-info">
+
+                <h3>Ovchi itlar</h3>
+
+                <p>1-qism</p>
+
+                <button onclick="openVideo(1)">
+                    Tomosha qilish
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- 2-QISM -->
+
+        <article class="episode-card" data-title="Ovchi itlar 2 qism">
+
+            <div class="poster">
+
+                <img
+                    src="ovchi-itlar.jpg"
+                    alt="Ovchi itlar 2-qism"
+                >
+
+                <span class="episode-number">02</span>
+
+                <div class="play-icon">▶</div>
+
+            </div>
+
+            <div class="episode-info">
+
+                <h3>Ovchi itlar</h3>
+
+                <p>2-qism</p>
+
+                <button onclick="openVideo(2)">
+                    Tomosha qilish
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- 3-QISM -->
+
+        <article class="episode-card" data-title="Ovchi itlar 3 qism">
+
+            <div class="poster">
+
+                <img
+                    src="ovchi-itlar.jpg"
+                    alt="Ovchi itlar 3-qism"
+                >
+
+                <span class="episode-number">03</span>
+
+                <div class="play-icon">▶</div>
+
+            </div>
+
+            <div class="episode-info">
+
+                <h3>Ovchi itlar</h3>
+
+                <p>3-qism</p>
+
+                <button onclick="openVideo(3)">
+                    Tomosha qilish
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- 4-QISM -->
+
+        <article class="episode-card" data-title="Ovchi itlar 4 qism">
+
+            <div class="poster">
+
+                <img
+                    src="ovchi-itlar.jpg"
+                    alt="Ovchi itlar 4-qism"
+                >
+
+                <span class="episode-number">04</span>
+
+                <div class="play-icon">▶</div>
+
+            </div>
+
+            <div class="episode-info">
+
+                <h3>Ovchi itlar</h3>
+
+                <p>4-qism</p>
+
+                <button onclick="openVideo(4)">
+                    Tomosha qilish
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- 5-QISM -->
+
+        <article class="episode-card" data-title="Ovchi itlar 5 qism">
+
+            <div class="poster">
+
+                <img
+                    src="ovchi-itlar.jpg"
+                    alt="Ovchi itlar 5-qism"
+                >
+
+                <span class="episode-number">05</span>
+
+                <div class="play-icon">▶</div>
+
+            </div>
+
+            <div class="episode-info">
+
+                <h3>Ovchi itlar</h3>
+
+                <p>5-qism</p>
+
+                <button onclick="openVideo(5)">
+                    Tomosha qilish
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- 6-QISM -->
+
+        <article class="episode-card" data-title="Ovchi itlar 6 qism">
+
+            <div class="poster">
+
+                <img
+                    src="ovchi-itlar.jpg"
+                    alt="Ovchi itlar 6-qism"
+                >
+
+                <span class="episode-number">06</span>
+
+                <div class="play-icon">▶</div>
+
+            </div>
+
+            <div class="episode-info">
+
+                <h3>Ovchi itlar</h3>
+
+                <p>6-qism</p>
+
+                <button onclick="openVideo(6)">
+                    Tomosha qilish
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- 7-QISM -->
+
+        <article class="episode-card" data-title="Ovchi itlar 7 qism">
+
+            <div class="poster">
+
+                <img
+                    src="ovchi-itlar.jpg"
+                    alt="Ovchi itlar 7-qism"
+                >
+
+                <span class="episode-number">07</span>
+
+                <div class="play-icon">▶</div>
+
+            </div>
+
+            <div class="episode-info">
+
+                <h3>Ovchi itlar</h3>
+
+                <p>7-qism</p>
+
+                <button onclick="openVideo(7)">
+                    Tomosha qilish
+                </button>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+    <div class="no-result" id="noResult">
+        Kino topilmadi 😕
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+    <div class="about-box">
+
+        <p class="section-label">DAXSHAT HUB</p>
+
+        <h2>Kino olami siz uchun</h2>
+
+        <p>
+            Daxshat Hub — zamonaviy va qulay kino platformasi.
+            Bu yerda kinolarni oson topish va tomosha qilish mumkin.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-logo">
+        DAXSHAT <span>HUB</span>
+    </div>
+
+    <p>
+        © 2026 Daxshat Hub
+    </p>
+
+    <div class="socials">
+
+        <a href="https://www.instagram.com/jaga.1ts?stkn=amQyd21zZXRsNnIy" target="_blank">
+            Instagram
+        </a>
+
+        <a href="https://t.me/Joxa_Web" target="_blank">
+            Telegram
+        </a>
+
+        <a href="https://t.me/Joxa_Code" target="_blank">
+            Joxa Code
+        </a>
+
+    </div>
+
+</footer>
+
+
+<!-- VIDEO MODAL -->
+
+<div class="video-modal" id="videoModal">
+
+    <div class="video-box">
+
+        <button class="close-video" onclick="closeVideo()">
+            ×
+        </button>
+
+        <div class="video-title" id="videoTitle">
+            Ovchi itlar
+        </div>
+
+        <video
+            id="movieVideo"
+            controls
+            playsinline
+        >
+
+            <source
+                id="videoSource"
+                src=""
+                type="video/mp4"
+            >
+
+            Brauzeringiz video formatini qo‘llab-quvvatlamaydi.
+
+        </video>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
